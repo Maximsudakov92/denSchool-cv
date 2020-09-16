@@ -4,98 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>My CV</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Maksim Sudakov</title>
 </head>
 
 <body>
   <main>
-    <section class="Name">
-      <h1>Maksim Sudakov</h1>
-    </section>
-    <figure>
-      <img src="/images/DSC03964-min (1)-min.jpg" alt="SudakovMaksim" width="304">
-    </figure>
-    <section class="Info">
-      <h3>Contact Info</h3>
-      <ul>
-        <li><a href="http://github.com/Maximsudakov92">GitHub</a></li>
-        <li><a href="http://www.codewars.com/users/SudakovMaksim">Codewars</a></li>
-        <li><a href="mailto:grax922@gmail.com">Mail</a/li> </ul> <h3>Summary</h3>
-          <p>My main goal is to complete Rolling Scopes courses successfully, to aplly given knowledge into
-            practice.
-            I am self-motivated, have a great desire and free time to learn everything connected with the software
-            engineering.
-            I always try to find out something new, to improve my skills and I am not satisfied with what already
-            been
-            achieved.
-          </p>
-    </section>
-    <section class="Skill">
-      <h3>Skils</h3>
-      <ul>
-        <li>Javascript</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-      </ul>
-    </section>
-    <section class="Code">
-      <h3>Code examples</h3>
-      <pre>
-          function nextBigger (n) {
-          const str = n.toString()
-          const arr = str.split('')
-          const dot = findDot(arr)
-          const rightSideSort = changeDot(dot)
-          const arr1 = arr.splice(0, arr.length - rightSideSort.length)
-          const arrConcat = arr1.concat(rightSideSort)
-          return (+arrConcat.join('') > n ? +arrConcat.join('') : -1)
-          }
+    <section class="contact-info">
+      <div>
+        <img src="https://via.placeholder.com/200" class="avatar">
 
-          function findDot (arr) {
-          let rightSide = []
-          const dot = []
-          for (let i = arr.length - 1; i >= 0; i--) {
-          if (+arr[i] > +arr[i-1]) {
-          rightSide = arr.slice(i-1, arr.length)
-          dot.push(arr[i-1])
-          break
-          }
-          }
-          rightSide.push(dot + '') //
-          rightSide.splice(0,1)
-          return rightSide
-          }
+        <div class="name">Maksim Sudakov</div>
+        <div class="position">Junior frontend developer</div>
+        <div class="contact">
+          <span class="icon-phone"></span>
+          <span class="value">+375336288128</span>
+        </div>
+        <div class="contact">
+          <span class="icon-mail"></span>
+          <span class="value">grax922@gmail.com</span>
+        </div>
+        <div class="contact">
+          <span class="icon-geo-point"></span>
+          <span class="value">Minsk</span>
+        </div>
+      </div>
+    </section>
+    <section class="information">
 
-          function changeDot (arr) {
-          const rightSide = arr
-          const nextBigger = []
-          const newDot = []
-          for (let i = arr.length - 1; i >= 0; i--) {
-          if (+arr[arr.length-1] < +arr[i-1]) { nextBigger.push(arr[i-1]) rightSide.splice(i-1, 1) break } }
-            rightSide.sort((a, b)=> a - b)
-            rightSide.unshift(nextBigger + '')
-            return rightSide
-          }
-          </pre>
-    </section>
-    <section class="Experience">
-      <h3>Experience</h3>
-      <p> At the moment I am on the way to my main goal: every day I learn a lot of useful materials,
-        watch video tutorials, webinars, do my homework, read technical literature.
-      </p>
-    </section>
-    <section class="Education">
-      <h3>Education</h3>
-      <p>I have not higher technical education. I read "HTML and CSS" by Jon Duckett. I completed HTML Academy
-        courses
-        (HTML, CSS),
-        train on kata in the codewars.
-      </p>
-    </section>
-    <section class="English">
-      <h3>English</h3>
-      <p>A2+</p>
     </section>
   </main>
 </body>
