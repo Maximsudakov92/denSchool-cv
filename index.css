@@ -57,6 +57,10 @@ body {
   color: #3F3F3F;
 }
 
+.contact-info {
+  margin-bottom: 50px;
+}
+
 .contact-info .avatar {
   border-radius: 50%;
   float: left;
@@ -98,47 +102,39 @@ body {
 
 /* ===================  skills - info"  ===================  */
 
-.skills {
+.skills,
+.education,
+.experience,
+.additional-information {
   width: 650px;
   margin: 40px auto;
+  margin-top: 20px;
 }
 
-.skills-item {
+.skills-item,
+.education-item,
+.experience-item,
+.additional-information-item {
   border: 1px solid grey;
   margin-bottom: 10px;
 }
 
-.skills-title {
+.skills-title,
+.education-title,
+.experience-title,
+.additional-information-title {
   display: block;
   position: relative;
   padding: 10px 15px;
   background-color: rgb(178, 178, 178);
 
-  cursor: pointer;
   text-transform: uppercase;
-
-  transition: background .5s ease-out;
 }
 
-.skills-title::after {
-  content: '';
-  display: block;
-  border-style: solid;
-  border-width: 7.41px 6px 0 6px;
-  border-color: #000000 transparent transparent transparent;
-
-  position: absolute;
-  top: 50%;
-  right: 15px;
-
-  transform: translateY(-50%);
-}
-
-.skills-title:hover {
-  background-color: rgb(136, 135, 135);
-}
-
-.skills-input {
+.skills-input,
+.education-input,
+.experience-input,
+.additional-information-input {
   width: 0;
   height: 0;
 
@@ -148,29 +144,27 @@ body {
   position: absolute;
 }
 
-.skills-input:checked~.skills-title {
-  background-color: rgb(136, 135, 135);
-}
-
-.skills-input:checked~.skills-title:after {
-  border-style: solid;
-  border-width: 0 6px 7.41px 6px;
-  border-color: transparent transparent #000000 transparent;
-
-}
-
-.skills-input:checked~.skills-text {
+.skills-input~.skills-text,
+.education-input~.education-text,
+.experience-input~.experience-text,
+.additional-information-input~.additional-information-text {
   display: block;
 }
 
-.skills-text {
+.skills-text,
+.education-text,
+.experience-text,
+.additional-information-text {
   display: none;
 
   padding: 10px 15px;
   font-size: 14px;
 }
 
-.skills-value {
+.skills-value,
+.education-value,
+.experience-value,
+.additional-information-value {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 25px;
